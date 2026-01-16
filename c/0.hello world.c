@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main() 
+{
+    /*在这里输入代码内�?*/
+
+    return 0;
+}

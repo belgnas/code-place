@@ -1,0 +1,79 @@
+// #include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include <cstring>
+#include <set>
+#include <tuple>
+#include <bitset>
+#include <utility>
+#include <queue> // 队列
+#include <deque> // 双端队列
+
+using namespace std;
+
+#define IOS ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+#define int long long
+#define endl '\n'
+typedef pair<int, int> PII;
+
+const int INF = 0x3f3f3f3f;
+const int MOD = 1e9 + 7;
+// &: 只有当两个相应的位都为 1 时,结果位才为 1,否则为 0
+// |: 只要两个相应的位中有一个为 1,结果位就为 1,否则为 0
+// ^: 如果两个相应的位不同(一个为 1，另一个为 0),则结果位为 1,如果相同则结果位为 0
+
+// 快速幂
+int fast_pow(int a, int b, int mod) // a ^ b % mod
+{
+    int res = 1 % mod;
+    while (b)
+    {
+        if (b & 1)
+        {
+            res = res * 1ll * a % mod;
+        }
+        a = a * 1ll * a % mod;
+        b >>= 1;
+    }
+    return res;
+}
+
+signed main()
+{
+    IOS;
+    
+    int a, b;
+    cin >> a >> b;
+
+    vector<int> arr;
+
+    while(a != 0)
+    {
+        arr.push_back(a % b);
+        a /= b;
+    }
+
+    // for(auto i : arr)
+    // {
+    //     cout << "喵" << arr[i] <<" ";
+    // }
+    // cout << endl;
+
+    int ans = 0;
+    for(int i = 0; i < arr.size(); i++)
+    {
+        if(arr[i] != 0)
+        {
+            break;
+        }
+
+        ans++;
+    }
+    cout << ans << endl;
+    
+    return 0;
+}

@@ -1,4 +1,4 @@
-// P1044 [NOIP2003 ÆÕ¼°×é] Õ»
+// P1044 [NOIP2003 æ™®åŠç»„] æ ˆ
 
 #include<iostream>
 using namespace std;

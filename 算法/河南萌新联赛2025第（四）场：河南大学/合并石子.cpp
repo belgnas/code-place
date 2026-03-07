@@ -9,8 +9,8 @@
 #include <tuple>
 #include <bitset>
 #include <utility>
-#include <queue> // ¶ÓÁĞ
-#include <deque> // Ë«¶Ë¶ÓÁĞ
+#include <queue> // é˜Ÿåˆ—
+#include <deque> // åŒç«¯é˜Ÿåˆ—
 
 using namespace std;
 
@@ -29,8 +29,8 @@ signed main()
     vector<int> a(n + 1, 0);
     for(int i = 1; i <= n; i++) cin >> a[i];
 
-    vector<int> prefix_sum(n + 2, 0); // Ç°×º
-    vector<int> suffix_sum(n + 2, 0); // ºó×º
+    vector<int> prefix_sum(n + 2, 0); // å‰ç¼€
+    vector<int> suffix_sum(n + 2, 0); // åç¼€
 
     for(int i = 2; i <= n; i++)
     {
@@ -40,7 +40,7 @@ signed main()
     {
         suffix_sum[i] = suffix_sum[i + 1] + a[i + 1];
     }
-    // // ²âÊÔ
+    // // æµ‹è¯•
     // for(int i = 1; i <= n + 1; i++) cout << prefix_sum[i] << " ";
     // cout << endl;
     // for(int i = 1; i <= n + 1; i++) cout << suffix_sum[i] << " ";
@@ -51,13 +51,13 @@ signed main()
     vector<int> suffix_ans(n + 2, 0);
     for(int i = 2; i <= n; i++)
     {
-        prefix_ans[i] = prefix_ans[i - 1] + (prefix_sum[i] + k - 1) / k; // +(k-1)ÊÇÎªÁËÏòÉÏÈ¡Õû
+        prefix_ans[i] = prefix_ans[i - 1] + (prefix_sum[i] + k - 1) / k; // +(k-1)æ˜¯ä¸ºäº†å‘ä¸Šå–æ•´
     }
     for(int i = n - 1; i >= 1; i--)
     {
         suffix_ans[i] = suffix_ans[i + 1] + (suffix_sum[i] + k - 1) / k;
     }
-    // // ²âÊÔ
+    // // æµ‹è¯•
     // for(int i = 1; i <= n + 1; i++) cout << prefix_ans[i] << " ";
     // cout << endl;
     // for(int i = 1; i <= n + 1; i++) cout << suffix_ans[i] << " ";

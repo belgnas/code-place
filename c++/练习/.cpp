@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    cout << "Èí¼þ24-1 ÀîÊÀº£";
+    cout << "è½¯ä»¶24-1 æŽä¸–æµ·";
     int length;
     int n,m,num;
     cin >> length;    

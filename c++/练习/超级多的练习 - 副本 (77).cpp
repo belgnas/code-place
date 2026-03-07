@@ -36,7 +36,7 @@ Element operator*(const Element& e1, const Element& e2) {
     return Element((e1.m_data * e2.m_data) % MOD);
 }
 
-// ¼Ó·¨·â±ÕĞÔÅĞ¶Ï
+// åŠ æ³•å°é—­æ€§åˆ¤æ–­
 bool IsAddClosed(const vector<Element>& aset) {
     for (size_t i = 0; i < aset.size(); ++i) {
         for (size_t j = 0; j < aset.size(); ++j) {
@@ -54,7 +54,7 @@ bool IsAddClosed(const vector<Element>& aset) {
     return true;
 }
 
-// ¼Ó·¨½áºÏÂÉÅĞ¶Ï
+// åŠ æ³•ç»“åˆå¾‹åˆ¤æ–­
 bool IsAddAssociativitySatisfied(const vector<Element>& aset) {
     for (size_t i = 0; i < aset.size(); ++i) {
         for (size_t j = 0; j < aset.size(); ++j) {
@@ -70,7 +70,7 @@ bool IsAddAssociativitySatisfied(const vector<Element>& aset) {
     return true;
 }
 
-// ¼Ó·¨µ¥Î»ÔªÅĞ¶Ï
+// åŠ æ³•å•ä½å…ƒåˆ¤æ–­
 bool IsAddIdentityExist(const vector<Element>& aset, Element& Identity) {
     for (const auto& e : aset) {
         bool isIdentity = true;
@@ -89,7 +89,7 @@ bool IsAddIdentityExist(const vector<Element>& aset, Element& Identity) {
     return false;
 }
 
-// ¼Ó·¨ÄæÔªÅĞ¶Ï
+// åŠ æ³•é€†å…ƒåˆ¤æ–­
 bool EachHasInverse4Add(const vector<Element>& aset) {
     Element identity; 
     if (!IsAddIdentityExist(aset, identity)) {
@@ -111,7 +111,7 @@ bool EachHasInverse4Add(const vector<Element>& aset) {
     return true;
 }
 
-// ³Ë·¨·â±ÕĞÔÅĞ¶Ï
+// ä¹˜æ³•å°é—­æ€§åˆ¤æ–­
 bool IsMultClosed(const vector<Element>& aset) {
     for (size_t i = 0; i < aset.size(); ++i) {
         for (size_t j = 0; j < aset.size(); ++j) {
@@ -129,7 +129,7 @@ bool IsMultClosed(const vector<Element>& aset) {
     return true;
 }
 
-// ³Ë·¨½áºÏÂÉÅĞ¶Ï
+// ä¹˜æ³•ç»“åˆå¾‹åˆ¤æ–­
 bool IsMultAssociativitySatisfied(const vector<Element>& aset) {
     for (size_t i = 0; i < aset.size(); ++i) {
         for (size_t j = 0; j < aset.size(); ++j) {
@@ -145,7 +145,7 @@ bool IsMultAssociativitySatisfied(const vector<Element>& aset) {
     return true;
 }
 
-// ³Ë·¨µ¥Î»ÔªÅĞ¶Ï
+// ä¹˜æ³•å•ä½å…ƒåˆ¤æ–­
 bool IsMultIdentityExist(const vector<Element>& aset, Element& Identity) {
     for (const auto& e : aset) {
         bool isIdentity = true;
@@ -164,7 +164,7 @@ bool IsMultIdentityExist(const vector<Element>& aset, Element& Identity) {
     return false;
 }
 
-// ³Ë·¨ÄæÔªÅĞ¶Ï
+// ä¹˜æ³•é€†å…ƒåˆ¤æ–­
 bool EachHasInverse4Mult(const vector<Element>& aset) {
     Element identity; 
     if (!IsMultIdentityExist(aset, identity)) {
@@ -187,9 +187,9 @@ bool EachHasInverse4Mult(const vector<Element>& aset) {
     return true;
 }
 
-// ¸¨Öúº¯Êı£º½«²¼¶û½á¹û×ªÎªºº×ÖÃèÊö
+// è¾…åŠ©å‡½æ•°ï¼šå°†å¸ƒå°”ç»“æœè½¬ä¸ºæ±‰å­—æè¿°
 string boolToChinese(bool result) {
-    return result ? "ÊÇ" : "·ñ";
+    return result ? "æ˜¯" : "å¦";
 }
 
 int main()
@@ -201,16 +201,16 @@ int main()
         aset.push_back(tmp);
     }
     Element tmpIdentity(-1);
-    cout << "¼Ó·¨ÔËËãÊÇ·ñ·â±Õ: " << boolToChinese(IsAddClosed(aset)) << endl;
-    cout << "¼Ó·¨ÔËËãÊÇ·ñÂú×ã½áºÏÂÉ: " << boolToChinese(IsAddAssociativitySatisfied(aset)) << endl;
-    cout << "¼Ó·¨ÔËËãÊÇ·ñ´æÔÚµ¥Î»Ôª: " << boolToChinese(IsAddIdentityExist(aset, tmpIdentity)) << endl;
-    cout << "¼Ó·¨ÔËËãÖĞÃ¿¸öÔªËØÊÇ·ñ¶¼ÓĞÄæÔª: " << boolToChinese(EachHasInverse4Add(aset)) << endl;
+    cout << "åŠ æ³•è¿ç®—æ˜¯å¦å°é—­: " << boolToChinese(IsAddClosed(aset)) << endl;
+    cout << "åŠ æ³•è¿ç®—æ˜¯å¦æ»¡è¶³ç»“åˆå¾‹: " << boolToChinese(IsAddAssociativitySatisfied(aset)) << endl;
+    cout << "åŠ æ³•è¿ç®—æ˜¯å¦å­˜åœ¨å•ä½å…ƒ: " << boolToChinese(IsAddIdentityExist(aset, tmpIdentity)) << endl;
+    cout << "åŠ æ³•è¿ç®—ä¸­æ¯ä¸ªå…ƒç´ æ˜¯å¦éƒ½æœ‰é€†å…ƒ: " << boolToChinese(EachHasInverse4Add(aset)) << endl;
 
     Element tmpIdentity2(-1);
-    cout << "³Ë·¨ÔËËãÊÇ·ñ·â±Õ: " << boolToChinese(IsMultClosed(aset)) << endl;
-    cout << "³Ë·¨ÔËËãÊÇ·ñÂú×ã½áºÏÂÉ: " << boolToChinese(IsMultAssociativitySatisfied(aset)) << endl;
-    cout << "³Ë·¨ÔËËãÊÇ·ñ´æÔÚµ¥Î»Ôª: " << boolToChinese(IsMultIdentityExist(aset, tmpIdentity2)) << endl;
-    cout << "³Ë·¨ÔËËãÖĞ·ÇÁãÔªËØÊÇ·ñ¶¼ÓĞÄæÔª: " << boolToChinese(EachHasInverse4Mult(aset)) << endl;
+    cout << "ä¹˜æ³•è¿ç®—æ˜¯å¦å°é—­: " << boolToChinese(IsMultClosed(aset)) << endl;
+    cout << "ä¹˜æ³•è¿ç®—æ˜¯å¦æ»¡è¶³ç»“åˆå¾‹: " << boolToChinese(IsMultAssociativitySatisfied(aset)) << endl;
+    cout << "ä¹˜æ³•è¿ç®—æ˜¯å¦å­˜åœ¨å•ä½å…ƒ: " << boolToChinese(IsMultIdentityExist(aset, tmpIdentity2)) << endl;
+    cout << "ä¹˜æ³•è¿ç®—ä¸­éé›¶å…ƒç´ æ˜¯å¦éƒ½æœ‰é€†å…ƒ: " << boolToChinese(EachHasInverse4Mult(aset)) << endl;
 
     system("pause");
     return 0;

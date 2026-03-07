@@ -19,7 +19,7 @@ int main()
     for (auto &[a, b] : f)
         cin >> a >> b, sum += b;
 
-    { // 删掉无法被炸死的
+    { // 鍒犳帀鏃犳硶琚偢姝荤殑
         vector<pii> g;
         queue<int> q;
         q.push(0);

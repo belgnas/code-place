@@ -6,8 +6,8 @@ using namespace std;
 
 vector<int>z_num;
 
-// ÅĞ¶ÏÊÇ·ñÎªÖÊÊı
-bool isPrime(int num)//²»ÊÇai
+// åˆ¤æ–­æ˜¯å¦ä¸ºè´¨æ•°
+bool isPrime(int num)//ä¸æ˜¯ai
 {
     for(int i : z_num)
     {
@@ -15,7 +15,7 @@ bool isPrime(int num)//²»ÊÇai
         else
         {
             if (num <= 3) return num - 1;
-        // ²»ÔÚ6µÄ±¶ÊıÁ½²àµÄÒ»¶¨²»ÊÇÖÊÊı
+        // ä¸åœ¨6çš„å€æ•°ä¸¤ä¾§çš„ä¸€å®šä¸æ˜¯è´¨æ•°
             if (num % 6!= 1 && num % 6!= 5) return false;
     
             for (int i = 5; i <= int(sqrt(num)); i += 6) 
@@ -90,7 +90,7 @@ int main()
             }
             cout << endl;
         }
-        cout << "ß÷ß÷ß÷£º";
+        cout << "å–µå–µå–µï¼š";
         for(int i : z_num)
         {
             cout << i << " ";

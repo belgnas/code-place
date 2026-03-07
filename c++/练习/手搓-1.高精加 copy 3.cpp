@@ -2,7 +2,7 @@
 
 // 2025/4/1
 
-// �߾��ȼӷ�
+// 高精度加法
 
 #include<iostream>
 #include<vector>

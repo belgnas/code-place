@@ -9,7 +9,7 @@ int main()
     cout << fixed << setprecision(3) << a / int(b) << endl;
     cout << fixed << setprecision(8) << a / int(b) << endl;
     
-    //还原默认输出格式
+    //杩樺師榛樿杈撳嚭鏍煎紡
     cout.unsetf(ios::fixed);
     cout.precision(6);
     

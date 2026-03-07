@@ -14,7 +14,7 @@ void is_l_year()
 
 int main()
 {
-    cout << "Èí¼ş24-1 ÀîÊÀº£" << endl;
+    cout << "è½¯ä»¶24-1 æä¸–æµ·" << endl;
     cin >> year >> month >> day;
     is_l_year();
     int num_day = 0;

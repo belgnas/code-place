@@ -1,6 +1,6 @@
 // 2025/2/26
 
-// ¸ß¾«¶È³ËµÍ¾«¶È
+// é«˜ç²¾åº¦ä¹˜ä½Žç²¾åº¦
 
 #include<iostream>
 #include<string>

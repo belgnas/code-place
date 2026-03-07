@@ -2,22 +2,22 @@
 #include<iostream>
 using namespace std;
 
-// 点类
+// 鐐圭被
 class Point
 {
 public:
-    // 设置x
+    // 璁剧疆x
     void setX(int X);
-    // 获取X
+    // 鑾峰彇X
     int getX();
 
-    // 设置Y
+    // 璁剧疆Y
     void setY(int Y);
-    // 获取Y
+    // 鑾峰彇Y
     int getY();
 
 private:
-    int m_X; // x坐标
-    int m_Y; // y坐标
+    int m_X; // x鍧愭爣
+    int m_Y; // y鍧愭爣
 
 };

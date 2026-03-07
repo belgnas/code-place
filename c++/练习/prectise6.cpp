@@ -20,7 +20,7 @@ struct Segment
     int l, r, p, q;
 };
 
-// 快u粟米
+// 蹇玼绮熺背
 int pow_mod(int a, int b)
 {
     int res = 1;
@@ -35,7 +35,7 @@ int pow_mod(int a, int b)
     }
 }
 
-// 计算逆元
+// 璁＄畻閫嗗厓
 int inv(int x)
 {
     return pow_mod(x, MOD - 2);

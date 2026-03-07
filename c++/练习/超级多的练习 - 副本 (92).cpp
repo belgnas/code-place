@@ -14,7 +14,7 @@ int main()
         cin >> n >> m;
         int arr[n][m];
 
-        PII sum[n]; // PII.firstÊÇsum, PII.secondÊÇindex
+        PII sum[n]; // PII.firstæ˜¯sum, PII.secondæ˜¯index
 
         for(int i = 0; i < n; i++)
         {
@@ -27,10 +27,10 @@ int main()
             }
         }
 
-        sort(sum, sum + n, greater<PII>()); // ¶Ôsum´Ó´óµ½Ğ¡ÅÅĞò
+        sort(sum, sum + n, greater<PII>()); // å¯¹sumä»å¤§åˆ°å°æ’åº
         for(int i = 0; i < n; i++)
         {
-            cout << "ß÷" << sum[i].first << " " << sum[i].second << endl;
+            cout << "å–µ" << sum[i].first << " " << sum[i].second << endl;
         }
 
         int answer = 0;
@@ -41,7 +41,7 @@ int main()
             {
                 for(int k = 0; k < j; k++)
                 {
-                    answer += arr[index][k]; // °ÑindexĞĞµÄÇ°jÁĞ¼ÓÆğÀ´
+                    answer += arr[index][k]; // æŠŠindexè¡Œçš„å‰jåˆ—åŠ èµ·æ¥
                 }
             }
         }

@@ -1,7 +1,7 @@
 // acwing
-// 4273. 链表合并
+// 4273. 閾捐〃鍚堝苟
 
-// 题目来源：https://www.acwing.com/problem/content/4276/
+// 棰樼洰鏉ユ簮锛歨ttps://www.acwing.com/problem/content/4276/
 
 
 #include<iostream>

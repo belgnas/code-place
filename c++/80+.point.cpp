@@ -1,22 +1,22 @@
 #include"80+.point.h"
 
-// 设置x
+// 璁剧疆x
 void Point::setX(int X)
 {
     m_X = X;
 }
-// 获取x
+// 鑾峰彇x
 int Point::getX()
 {
     return m_X;
 }
 
-// 设置y
+// 璁剧疆y
 void Point::setY(int Y)
 {
     m_Y = Y;
 }
-// 获取y
+// 鑾峰彇y
 int Point::getY()
 {
     return m_Y;

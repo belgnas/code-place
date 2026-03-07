@@ -1,23 +1,23 @@
 #include "80+.circle.h"
 
 
-// 设计半径
+// 璁捐鍗婂緞
 void Circle::setR(int R)
 {
     m_R = R;
 }
-// 获取半径
+// 鑾峰彇鍗婂緞
 int Circle::getR()
 {
     return m_R;
 }
 
-// 设置圆心
+// 璁剧疆鍦嗗績
 void Circle::setCenter(Point center)
 {
     m_Center = center;
 }
-// 获取圆心
+// 鑾峰彇鍦嗗績
 Point Circle::getCenter()
 {
     return m_Center;

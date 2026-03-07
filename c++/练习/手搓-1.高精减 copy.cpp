@@ -1,6 +1,6 @@
 // 2025/2/26
 
-// �߾��ȼ���
+// 高精度减法
 
 #include<iostream>
 #include<vector>

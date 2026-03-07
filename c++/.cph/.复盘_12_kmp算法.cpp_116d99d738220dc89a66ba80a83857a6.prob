@@ -1,0 +1,1 @@
+{"name":"Local: 复盘_12_kmp算法","url":"c:\\Users\\belgnas\\Desktop\\computer\\code\\c++\\复盘_12_kmp算法.cpp","tests":[{"id":1772075403098,"input":"3\naba\n5\nababa","output":"0 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\belgnas\\Desktop\\computer\\code\\c++\\复盘_12_kmp算法.cpp","group":"local","local":true}

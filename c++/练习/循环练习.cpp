@@ -8,7 +8,7 @@ class Virus {
         ~Virus() {
             cout << "I must disappear!" << endl;
         } 
-        virtual void eat() = 0; //定义纯虚函数 
+        virtual void eat() = 0; //瀹氫箟绾櫄鍑芥暟 
 };
 class vOne : public Virus
 {
@@ -38,13 +38,13 @@ class vTwo : public Virus
 };
 
 int main() {
-    Virus *v;     //定义父类指针v 
-    vOne v1;     //定义vOne对象v1 
-    vTwo v2;     //定义vTwo对象v2 
+    Virus *v;     //瀹氫箟鐖剁被鎸囬拡v 
+    vOne v1;     //瀹氫箟vOne瀵硅薄v1 
+    vTwo v2;     //瀹氫箟vTwo瀵硅薄v2 
     v = &v1;
-    v->eat(); //通过父类指针调用eat()方法 
+    v->eat(); //閫氳繃鐖剁被鎸囬拡璋冪敤eat()鏂规硶 
     v = &v2;
-    v->eat(); //通过父类指针调用eat()方法 
+    v->eat(); //閫氳繃鐖剁被鎸囬拡璋冪敤eat()鏂规硶 
     
     cout << "Our immune system is kill v1 and v2..." << endl;
     return 0;

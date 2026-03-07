@@ -23,7 +23,7 @@ void is_huiwen()
 
 int main()
 {
-    cout << "Èí¼þ24-1 ÀîÊÀº£" << endl;
+    cout << "è½¯ä»¶24-1 æŽä¸–æµ·" << endl;
     cin >> word;
     is_huiwen();
     

@@ -1,6 +1,6 @@
 // 2025/3/3
 
-// �߾��ȼӷ�
+// 高精度加法
 
 #include<iostream>
 #include<string>

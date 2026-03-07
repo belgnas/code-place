@@ -31,7 +31,7 @@ void add_to_tail(string s_numble, string s_name, int s_study){
     idx++;}
 int main()
 {
-    cout << "Èí¼ş24-1 ÀîÊÀº£" << endl;
+    cout << "è½¯ä»¶24-1 æä¸–æµ·" << endl;
     init();
     
     string s_numble;

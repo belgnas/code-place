@@ -43,7 +43,7 @@ void print()
 
 int main()
 {
-    cout << "Èí¼þ24-1 ÀîÊÀº£" << endl;
+    cout << "è½¯ä»¶24-1 æŽä¸–æµ·" << endl;
     
     cin >> n;
     for(int i = 1; i <= n; i++)

@@ -1,6 +1,6 @@
 // 2025/2/26
 
-// ¸ß¾«³ýµÍ¾«
+// é«˜ç²¾é™¤ä½Žç²¾
 
 #include<iostream>
 #include<algorithm>

@@ -9,8 +9,8 @@
 #include <tuple>
 #include <bitset>
 #include <utility>
-#include <queue> // ¶ÓÁĞ
-#include <deque> // Ë«¶Ë¶ÓÁĞ
+#include <queue> // é˜Ÿåˆ—
+#include <deque> // åŒç«¯é˜Ÿåˆ—
 
 using namespace std;
 
@@ -22,7 +22,7 @@ const int INF = 0x3f3f3f3f;
 
 void dp(int n, vector<int> &arr)
 {
-    // ÍË³öÌõ¼ş
+    // é€€å‡ºæ¡ä»¶
     if(arr.size() == n)
     {
         for(int i = 0; i < n; i++)

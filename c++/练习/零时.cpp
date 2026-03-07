@@ -1,10 +1,10 @@
-// ¼ÓÓÍ
+// åŠ æ²¹
 
 #include<iostream>
 using namespace std;
 int main()
 {
-    cout << "ÀîÊÀº£" << endl;
+    cout << "æä¸–æµ·" << endl;
 
     return 0;
 }

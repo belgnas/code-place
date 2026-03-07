@@ -9,8 +9,8 @@
 #include <tuple>
 #include <bitset>
 #include <utility>
-#include <queue> // 队列
-#include <deque> // 双端队列
+#include <queue> // 闃熷垪
+#include <deque> // 鍙岀闃熷垪
 
 using namespace std;
 

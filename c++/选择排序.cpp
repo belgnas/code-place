@@ -1,4 +1,4 @@
-// 选择排序
+// 閫夋嫨鎺掑簭
 
 #include <iostream>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int arr[9] = {4, 2, 0, 5, 5, 7, 1, 3, 9};
-    cout << "排序前：" << endl;
+    cout << "鎺掑簭鍓嶏細" << endl;
     for (int i = 0; i < 9; i++)
     {
         cout << arr[i] << " ";
@@ -28,8 +28,8 @@ int main()
         arr[num] = temp;
     }
 
-    // 打印排序后的数组
-    cout << "排序后：" << endl;
+    // 鎵撳嵃鎺掑簭鍚庣殑鏁扮粍
+    cout << "鎺掑簭鍚庯細" << endl;
     for (int i = 0; i < 9; i++)
     {
         cout << arr[i] << " ";

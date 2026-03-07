@@ -9,8 +9,8 @@
 #include <tuple>
 #include <bitset>
 #include <utility>
-#include <queue> // ¶ÓÁĞ
-#include <deque> // Ë«¶Ë¶ÓÁĞ
+#include <queue> // é˜Ÿåˆ—
+#include <deque> // åŒç«¯é˜Ÿåˆ—
 
 using namespace std;
 
@@ -23,7 +23,7 @@ const int INF = 0x3f3f3f3f;
 signed main()
 {
     IOS;
-    // mex = 0 Çé¿ö
+    // mex = 0 æƒ…å†µ
     int t;
     cin >> t;
     while(t--)
@@ -42,7 +42,7 @@ signed main()
             }
         }
 
-        // ÏàÍ¬µ«ÊÇ²»ÊÇÈ«0(-1Ïàµ±ÓÚÒ»¸öÏàÍ¬Êı)
+        // ç›¸åŒä½†æ˜¯ä¸æ˜¯å…¨0(-1ç›¸å½“äºä¸€ä¸ªç›¸åŒæ•°)
         bool flat1 = false;
         for(int i = 0; i < n - 2; i++)
         {

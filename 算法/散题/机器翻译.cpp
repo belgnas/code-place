@@ -10,8 +10,8 @@
 #include <bitset>
 #include <utility>
 #include <stack>
-#include <queue> // ¶ÓÁĞ
-#include <deque> // Ë«¶Ë¶ÓÁĞ
+#include <queue> // é˜Ÿåˆ—
+#include <deque> // åŒç«¯é˜Ÿåˆ—
 
 using namespace std;
 
@@ -33,20 +33,20 @@ signed main()
     for (int i = 0; i < n; ++i)
     {
         cin >> x;
-        if (q.size() < m && find(q.begin(), q.end(), x) == q.end()) // ¼ì²é¶ÓÁĞÖĞÊÇ·ñÒÑ´æÔÚ¸ÃÔªËØ
+        if (q.size() < m && find(q.begin(), q.end(), x) == q.end()) // æ£€æŸ¥é˜Ÿåˆ—ä¸­æ˜¯å¦å·²å­˜åœ¨è¯¥å…ƒç´ 
         {
             ans++;
-            q.push_back(x); // ¶ÓÁĞÎ´ÂúÇÒÔªËØ²»ÔÚ¶ÓÁĞÖĞÊ±Èë¶Ó
+            q.push_back(x); // é˜Ÿåˆ—æœªæ»¡ä¸”å…ƒç´ ä¸åœ¨é˜Ÿåˆ—ä¸­æ—¶å…¥é˜Ÿ
         }
-        if (q.size() == m && find(q.begin(), q.end(), x) == q.end()) // ¶ÓÁĞÒÑÂú
+        if (q.size() == m && find(q.begin(), q.end(), x) == q.end()) // é˜Ÿåˆ—å·²æ»¡
         {
             ans++;
-            q.pop_front(); // ³ö¶Ó×îÔçÈë¶ÓµÄÔªËØ
-            q.push_back(x); // ĞÂÔªËØÈë¶Ó
+            q.pop_front(); // å‡ºé˜Ÿæœ€æ—©å…¥é˜Ÿçš„å…ƒç´ 
+            q.push_back(x); // æ–°å…ƒç´ å…¥é˜Ÿ
         }
-        if (find(q.begin(), q.end(), x) != q.end()) // ÔªËØÒÑÔÚ¶ÓÁĞÖĞ
+        if (find(q.begin(), q.end(), x) != q.end()) // å…ƒç´ å·²åœ¨é˜Ÿåˆ—ä¸­
         {
-            continue; // ÔªËØÒÑÔÚ¶ÓÁĞÖĞ£¬²»×ö´¦Àí
+            continue; // å…ƒç´ å·²åœ¨é˜Ÿåˆ—ä¸­ï¼Œä¸åšå¤„ç†
         }
     }
 

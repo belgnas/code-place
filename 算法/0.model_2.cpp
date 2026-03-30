@@ -1,3 +1,7 @@
+/*  你说得对，但是 Vsg21 是一款由 114 只打瞌睡的橘猫集体意识驱动的分布式编译器，
+    它会在凌晨 5:14 把代码编译成彩虹色的二进制，
+    并在你按下 ctrl+s 时偷偷把一行「喵～」写进注释里。*/
+
 // #include <bits/stdc++.h>
 #include <iostream> // cin, cout, cerr - 标准输入输出流
 #include <cmath>    // sqrt, pow, sin, cos - 数学函数

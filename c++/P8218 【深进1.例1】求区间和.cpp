@@ -36,7 +36,5 @@ int main()
         cout << sum[r] - sum[l - 1] << endl; 
     }
 
-    
-
     return 0;
 }

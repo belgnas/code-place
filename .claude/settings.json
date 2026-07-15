@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git status *)",
+      "Bash(git branch *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(wc *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(rg *)"
+    ],
+    "deny": [
+      "Write(**/.cph/**)",
+      "Write(**/output/**)",
+      "Write(**/__pycache__/**)",
+      "Write(**/.vs/**)"
+    ]
+  }
+}
